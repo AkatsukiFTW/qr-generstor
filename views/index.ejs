@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="outer">
+        <div class="sec-section">
+            <div class="cont-title">
+                <h1>Write your Link</h1>
+            </div>
+            <div class="cont-link">
+                <form action="/check" method="POST">
+                <input type="text" id="myInput" name="link-qr" placeholder="Write your link" required>
+                <div class="btn">
+                <button>Submit</button>
+            </div>
+            </form>
+            <div class="qr-class">
+            <% if (qrData) { %>
+                <h2>Your QR Code:</h2>
+                <img src="<%= qrData %>" alt="QR Code">
+            <% }  %>
+        </div>
+         </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

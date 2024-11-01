@@ -1,0 +1,7 @@
+Terminal:
+npm init -y
+
+npm i express
+npm i ejs
+npm i body-parser
+npm i qr-image
